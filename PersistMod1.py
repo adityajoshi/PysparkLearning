@@ -1,5 +1,4 @@
 from pyspark import SparkContext, StorageLevel
-from sys import stdin
 
 sc = SparkContext("local[*]", "PremiumCustomers")
 
@@ -19,5 +18,3 @@ for x in result:
     print(x)
 
 print(doubled_amt.count())
-
-# stdin.readline()
